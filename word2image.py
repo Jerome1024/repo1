@@ -25,7 +25,8 @@ def get_docs_name():
 def word2pdf(file_name):
     os_name = platform.system()
     if os_name == "Windows":
-        return convert(file_name)
+        pass
+        # return convert(file_name)
     
     elif os_name == "Linux":
 
