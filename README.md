@@ -1,2 +1,3 @@
-# repo1
-# 使用 vs code 进行学习git 和 github 的使用。111
+# 使用python实现把word文档转换成图片
+
+第一次学习
