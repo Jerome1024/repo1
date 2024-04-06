@@ -23,19 +23,18 @@ def get_docs_name():
 
 # 把一个word文件转化成pdf
 def word2pdf(file_name):
-    return convert(file_name)
-    # os_name = platform.system()
-    # if os_name == "Windows":
-        # return convert(file_name)
+    os_name = platform.system()
+    if os_name == "Windows":
+        return convert(file_name)
     
-    # elif os_name == "Linux":
+    elif os_name == "Linux":
 
-    #     subprocess.run(['lowriter', '--headless', '--convert-to', 'pdf', file_name])
-    #     return file_name.rsplit('.', 1)[0] + '.pdf'
+        subprocess.run(['lowriter', '--headless', '--convert-to', 'pdf', file_name])
+        return file_name.rsplit('.', 1)[0] + '.pdf'
 
-    # else:
-    #     print("不支持该操作系统")
-    #     return None
+    else:
+        print("不支持该操作系统")
+        return None
 
 
 # 获得一个word文档的页边距,返回一个页边距的字典
